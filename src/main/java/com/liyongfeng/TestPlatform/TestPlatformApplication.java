@@ -9,13 +9,8 @@ import org.springframework.context.ConfigurableApplicationContext;
 @SpringBootApplication
 public class TestPlatformApplication {
 
-	public static void main(String[] args) {
-//		SpringApplication.run(TestPlatformApplication.class, args);
-		ConfigurableApplicationContext context = SpringApplication.run(TestPlatformApplication.class, args);
-		int length = context.getBeanDefinitionNames().length;
-		log.info("Spring boot启动初始化了{}个Bean", length);
-		log.error("Spring boot启动初始化了{}个Bean", length);
-
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(TestPlatformApplication.class, args);
+    }
 
 }
